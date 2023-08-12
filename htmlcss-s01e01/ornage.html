@@ -5,7 +5,6 @@
         <meta charset="utf-8">
         <style>
             body {
-                color: red;
                 background-color: orange;
                 background-image: url(images/orange-bg.jpg);
             }
@@ -13,6 +12,22 @@
                 background-color: white;
                 width: 400px; /* 기본적으로 부모의 크기 만큼 꽉찬다. - auto */
                 height: auto; /* 기본적으로 자식의 높이의 합만큼이다. height값은 보통 고정값을 주지 않는다!*/
+                padding: 50px; /* padding은 안쪽 여백이지만 기본적인 width에 추된다. 총 넓이는 50 + 400 + 50 으로 500px 이다.*/
+                
+                margin-left: auto;
+                margin-right: auto;
+
+                margin: 50px auto; /* 상하 50, 좌우 auto*/
+                margin: 30px auto 50px;
+                /*       상   좌우  하  */
+                margin: 20px 30px 40px 50px;
+                /*       상   우   하   좌  */
+
+                border-width: 10px;
+                border-style: solid;
+                border-color: orange;
+
+                border: 10px solid orange; /*border의 세 속성을 한 줄로 줄여 쓸 수 있다.*/
             }
         </style>
     </head>
