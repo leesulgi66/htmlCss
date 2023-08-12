@@ -3,14 +3,28 @@
     <head>
         <title>Fruit</title>
         <meta charset="utf-8">
+        <style>
+            body {
+                color: red;
+                background-color: orange;
+                background-image: url(images/orange-bg.jpg);
+            }
+            div {
+                background-color: white;
+                width: 400px; /* 기본적으로 부모의 크기 만큼 꽉찬다. - auto */
+                height: auto; /* 기본적으로 자식의 높이의 합만큼이다. height값은 보통 고정값을 주지 않는다!*/
+            }
+        </style>
     </head>
     <body>
-        <img src="images/orange.png">  <!--img는 닫는 태그가 없다.-->
-        <h1 style="color:orange;">Orange</h1>
-        <ul>
-            <li>Orange</li>
-            <li>Kiwi</li>
-            <li>Strawberry</li>
-        </ul>
+        <div>
+            <img src="images/orange.png">  <!--img는 닫는 태그가 없다.-->
+            <h1>Orange</h1>
+            <ul>
+                <li>Orange</li>
+                <li>Kiwi</li>
+                <li>Strawberry</li>
+            </ul>
+        </div>
     </body>
 </html>
