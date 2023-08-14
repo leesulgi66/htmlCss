@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>table</h2>
+        <table> <!--전체를 담고 있는 표-->
+            <tr> <!--각 행-->
+                <th>나이</th> <!--각 열의 제목을 담은 제목 셀-->
+                <th>직업</th>
+                <th>이름</th>
+            </tr>
+            <tr>
+                <td>23</td> <!--데이터를 담은 데이터 셀-->
+                <td>대학생</td>
+                <td>김구름</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>직장인</td>
+                <td>구우름</td>
+            </tr>
+        </table>
+        <!-- 위 코드에서 <th>, <td>, <tr>은 각각 table heading, table data, table row을 축약한 태그이다. -->
+
+        <br><br>
+        <table>
+            <tr>
+                <th>나이</th>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <th>직업</th>
+                <td>대학생</td>
+                <td>직장인</td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>김구름</td>
+                <td>구우름</td>
+            </tr>
+        </table>
+        <!-- th를 옮겨서 왼쪽에 표 제목을 위치시킬 수 있다. -->
+
+        <br><br>
+
+        <!-- table에는 두 행이나 두 열을 차지하게 할 수 있는 속성이 있다. -->
+        <!-- colspan="숫자" 는 "숫자"만큼 셀이 행을 점유, rowspan="숫자"는 "숫자"만큼 셀이 열을 점유 -->
+        <table>
+            <tr>
+                <th>나이</th>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <th>직업</th>
+                <td colspan="2">대학생</td> <!-- 2셀이 병합 된다.-->
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>김구름</td>
+                <td>구우름</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
