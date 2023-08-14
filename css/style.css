@@ -1,6 +1,6 @@
 /* 타입 선택자 */
 p {
-    color : red;
+    color : black;
 }
 
 /* 아이디 선택자 */
@@ -16,4 +16,42 @@ p {
 /* 속성 선택자 */
 li[target="self"] {
     color: seagreen;
+}
+
+
+
+/* 복합 선택자 */
+
+/* 후손 선택자 */
+#me p {
+    background-color: yellow;
+    /* me의 아래에 있는 모든 후손의 p가 색이 변한다! */
+}
+
+/* 자식 선택자 */
+#me > p {
+	background-color: green;
+    /* me의 자식인 p만 색이 변한다! */
+}
+
+
+
+
+/* 가상 클래스 선택자 */
+
+/* 방문하지 않은 링크일 때 */
+a:link {
+	color: turquoise;
+}
+/* 방문한 링크일 때 */
+a:visited {
+	color: green;
+}
+/* 링크에 마우스를 올렸을 때 */
+a:hover {
+	background-color: yellow;
+}
+/* 선택된 링크일 때(클릭 했을 때) */
+a:active {
+	background-color: blue;
 }
