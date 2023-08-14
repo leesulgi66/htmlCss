@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>순서 없는 목록</h2>
+        <ul>
+            <li>학교 과제하기</li>
+            <li>Python 강의 듣기</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>순서 있는 목록</h2>
+        <ol>
+            <li>세제</li>
+            <li>돼지 고기 300g</li>
+            <li>생수</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>중첩 리스트</h2>
+        <h3>오늘 할 일</h3>
+        <ul>
+            <li>학교 과제하기
+                <ol>
+                    <li>물리학 실험 보고서</li>
+                    <li>확률과 통계 chapter.3 풀이</li>
+                </ol>
+            </li>
+            <li>Python 강의 듣기</li>
+        </ul>
+        <h3>장바구니</h3>
+        <ol>
+            <li>세제</li>
+            <li>돼지 고기 300g</li>
+            <li>생수</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>ol 태그 속성</h2>
+
+        <!-- start="숫자"는 리스트가 시작하는 숫자를 정한다. -->
+        <ol>	
+            <li value="3">세제</li>
+            <li>돼지 고기 300g</li>
+            <li value="7">생수</li>
+        </ol>
+
+
+        <!-- type="문자"는 순서를 시작하는 문자를 지정할 수 있다. -->
+        <ol type="i">	
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <ol type="I">	
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <ol type="a">	
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <ol type="A">	
+            <li>1</li>
+            <li>2</li>
+        </ol>
+        <ol type="1">	
+            <li>1</li>
+            <li>2</li>
+        </ol>
+
+
+        <!-- reversed는 순서를 반대로 시작하도로 지정하는 속성 -->
+        <ol reversed>  
+            <li>세제</li>
+            <li>돼지 고기 300g</li>
+            <li>생수</li>
+        </ol>
+
+
+        <h2>li 태그 속성</h2>
+        <!-- value="숫자"는 해당하는 리스트 아이템의 번호를 지정 -->
+        <ol>	
+            <li value="3">세제</li>
+            <li>돼지 고기 300g</li>
+            <li value="7">생수</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
