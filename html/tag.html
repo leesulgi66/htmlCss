@@ -1,16 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div><p>image tag</p>
-        <!-- 형식 <img src="이미지 URL" alt="이미지 대체 문구" width="넓이" height="높이" />  -->
-        <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg" alt="dog's photo" width="430px" height="320px"/>
+    <div>
+        <p>input tag</p>
+
+        <!--여기 아래에 코드를 직접 작성한 뒤 실행해 봅시다!-->
+        <h3>text</h3>
+        <input type="text" name="myname">
+        <hr>
+
+        <h3>email</h3>
+        <input type="email" name="email">
+        <hr>
+
+        <h3>password</h3>
+        <input type="password" name="pw">
+        <hr>
+
+        <h3>button</h3>
+        <input type="button" value="Button">
+        <hr>
+
+        <h3>search</h3>
+        <input type="search" name="search">
+        <hr>
+
+        <h3>checkbox</h3>
+        <input type="checkbox" name="python" value="python" checked>Python<br>
+        <input type="checkbox" name="javascript" value="javascript">Javascript<br>
+        <input type="checkbox" name="cpp" value="cpp">C++<br>
+        <hr>
+
+        <h3>file</h3>
+        <input type="file" name="myfile">
+        <hr>
+
+        <h3>radio</h3>
+        <input type="radio" name="gender" value="male" checked> 남자<br>
+        <input type="radio" name="gender" value="female"> 여자<br>
+        <hr>
+
+
+        <h3>color</h3>
+        <input type="color" name="color">
+        <hr>
+
+        <h3>date</h3>
+        <input type="date" name="birthday">
+        <hr>
+
+        <h3>number</h3>
+        <input type="number" name="quantity" min="1" max="10" step="1" value="1">
+        <hr>
+
+        <h3>range</h3>
+        <input type="range" name="points" min="0" max="10" step="1" value="5">
+        <hr>
+
+        <h3>reset</h3>
+        <input type="reset">
+        <hr>
+
+        <h3>time</h3>
+        <input type="time" name="mytime">
+        <hr>
+
+        <h3>회원가입</h3>
+        <form action="my-app" method="get">
+            <input type="text" name="id">
+            <input type="submit">
+        </form>
+
+        <h3>회원가입</h3>
+        <form action="my-app" method="get">
+            <input type="text" name="id" placeholder="아이디를 입력하세요.">
+            <input type="password" name="password" placeholder="비밀번호를 입력하세요.">
+        </form>
+
+
+        <h3>회원가입</h3>
+        <form action="my-app" method="get">
+            <div>
+                <label for="userid">아이디: </label>
+                <input type="text" id="userid" name="id" placeholder="아이디를 입력하세요.">
+            </div>
+            <div>
+                <label for="password">비밀번호: </label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요.">
+            </div>
+        </form>
+
     </div>
-  
+
+
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <div>
+        <p>image tag</p>
+        <!-- 형식 <img src="이미지 URL" alt="이미지 대체 문구" width="넓이" height="높이" />  -->
+        <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg"
+            alt="dog's photo" width="430px" height="320px" />
+    </div>
+
     <div>
         <p>audio tag</p>
         <!-- 확장자의 음원 형식을 뜻하는 type 속성은 생략 가능 -->
@@ -18,7 +116,7 @@
             <source src="assets/audio/dance.mp3" type="audio/mpeg">
         </audio>
     </div>
-    
+
     <div>
         <p>video tag</p>
         <!-- video는 오디오와는 다르게 width와 height의 설정이 가능하다. -->
@@ -29,12 +127,13 @@
 
     <div>
         <p>youtube</p>
-        <iframe width="1257" height="707" src="https://www.youtube.com/embed/7WVhVioBnIw" title="로스트아크 매드무비 기공사(LostArk montage SoulMaster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="1257" height="707" src="https://www.youtube.com/embed/7WVhVioBnIw"
+            title="로스트아크 매드무비 기공사(LostArk montage SoulMaster)" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
 
-        <iframe src="https://www.youtube.com/embed/7WVhVioBnIw" width="500px"; height="300px";></iframe>
+        <iframe src="https://www.youtube.com/embed/7WVhVioBnIw" width="500px" ; height="300px" ;></iframe>
     </div>
-    
-
-
 </body>
+
 </html>
