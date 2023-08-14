@@ -1,0 +1,19 @@
+/* 타입 선택자 */
+p {
+    color : red;
+}
+
+/* 아이디 선택자 */
+#first {
+    color : skyblue;
+}
+
+/* 클래스 선택자 */
+.my-class {
+    color : tomato;
+}
+
+/* 속성 선택자 */
+li[target="self"] {
+    color: seagreen;
+}
