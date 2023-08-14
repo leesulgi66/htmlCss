@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         h2 {
-            border-bottom : 2px solid skyblue;
+            border-bottom: 2px solid skyblue;
         }
     </style>
 </head>
@@ -81,17 +81,11 @@
             <input type="submit">
         </form>
 
-        <h3>회원가입</h3>
-        <form action="my-app" method="get">
-            <input type="text" name="id" placeholder="아이디를 입력하세요.">
-            <input type="password" name="password" placeholder="비밀번호를 입력하세요.">
-        </form>
-
 
         <h3>회원가입</h3>
         <form action="my-app" method="get">
             <div>
-                <label for="userid">아이디: </label>
+                <label for="userid">아이디: </label>  <!-- label을 사용하면 text를 클릭 해도 input으로 이동한다. -->
                 <input type="text" id="userid" name="id" placeholder="아이디를 입력하세요.">
             </div>
             <div>
@@ -107,13 +101,7 @@
 
 
     <div>
-        <h2>select tag</h2>
-        <select name="job" id="job">
-            <option value="student">학생</option>
-            <option value="teacher">선생님</option>
-            <option value="etc">기타</option>
-        </select>
-
+        <h2>form tag</h2>
         <h3>회원가입</h3>
         <form action="my-app" method="get">
             <div>
@@ -139,45 +127,50 @@
                     <option value="etc">기타</option>
                 </select>
             </div>
+            <div>
+                <label for="introduce">자기소개: </label>
+                <textarea name="introduce" id="introduce" placeholder="자기소개를 입력하세요" cols="20" rows="6"></textarea>
+            </div>
+            <button type="submit">제출</button>
+            <input type="reset">
         </form>
-    </div>
 
 
-    
-    <br><br><br>
-    <!-- ------------------------------------------------------------------------------------------- -->
-    <div>
-        <h2>image tag</h2>
-        <!-- 형식 <img src="이미지 URL" alt="이미지 대체 문구" width="넓이" height="높이" />  -->
-        <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg"
-            alt="dog's photo" width="430px" height="320px" />
-    </div>
 
-    <div>
-        <h2>audio tag</h2>
-        <!-- 확장자의 음원 형식을 뜻하는 type 속성은 생략 가능 -->
-        <audio controls>
-            <source src="assets/audio/dance.mp3" type="audio/mpeg">
-        </audio>
-    </div>
+        <br><br><br>
+        <!-- ------------------------------------------------------------------------------------------- -->
+        <div>
+            <h2>image tag</h2>
+            <!-- 형식 <img src="이미지 URL" alt="이미지 대체 문구" width="넓이" height="높이" />  -->
+            <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/QsT/image/NSTeOeMe0MddpqlJ23FZV7hJGvg"
+                alt="dog's photo" width="430px" height="320px" />
+        </div>
 
-    <div>
-        <h2>video tag</h2>
-        <!-- video는 오디오와는 다르게 width와 height의 설정이 가능하다. -->
-        <video width="640" height="360" controls>
-            <source src="assets/video/dance.mp4" type="video/mp4">
-        </video>
-    </div>
+        <div>
+            <h2>audio tag</h2>
+            <!-- 확장자의 음원 형식을 뜻하는 type 속성은 생략 가능 -->
+            <audio controls>
+                <source src="assets/audio/dance.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
-    <div>
-        <h2>youtube</h2>
-        <iframe width="1257" height="707" src="https://www.youtube.com/embed/7WVhVioBnIw"
-            title="로스트아크 매드무비 기공사(LostArk montage SoulMaster)" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+        <div>
+            <h2>video tag</h2>
+            <!-- video는 오디오와는 다르게 width와 height의 설정이 가능하다. -->
+            <video width="640" height="360" controls>
+                <source src="assets/video/dance.mp4" type="video/mp4">
+            </video>
+        </div>
 
-        <iframe src="https://www.youtube.com/embed/7WVhVioBnIw" width="500px" ; height="300px" ;></iframe>
-    </div>
+        <div>
+            <h2>youtube</h2>
+            <iframe width="1257" height="707" src="https://www.youtube.com/embed/7WVhVioBnIw"
+                title="로스트아크 매드무비 기공사(LostArk montage SoulMaster)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe src="https://www.youtube.com/embed/7WVhVioBnIw" width="500px" ; height="300px" ;></iframe>
+        </div>
 </body>
 
 </html>
