@@ -10,5 +10,6 @@
 .container {
 	background-color: skyblue;
 	padding: 16px;
-	display: flex;/* flex container에 해당하는 부분에 display: flex를 작성 */
+	display: flex;
+	flex-direction: column; /* column은 세로방향, row는 가로방향 */
 }
