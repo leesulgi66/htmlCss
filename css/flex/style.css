@@ -11,5 +11,7 @@
 	background-color: skyblue;
 	padding: 16px;
 	display: flex;
-	flex-direction: column; /* column은 세로방향, row는 가로방향 */
+	flex-direction: row;
+	width: 250px; /* width를 줄이면 item의 width는 무시되고 부모 요소에 맞춰진다. 또한 너무 작아지면 item이 밖으로 벗어난다.*/
+    flex-wrap : wrap; /* item을 한줄에 담을 수 없을 때 wrap를 사용하면 다음줄로 넘길 수 있다. 기본값은 nowrap(한줄)*/
 }
