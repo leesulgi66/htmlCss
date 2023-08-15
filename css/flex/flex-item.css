@@ -1,0 +1,91 @@
+.container {
+	background-color: skyblue;
+	height: 36px;
+	padding: 12px;
+	margin-bottom: 16px;
+	display: flex;
+}
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	background: pink;
+	flex-grow: 1; /* item이 container를 꽉 채운다.*/
+}
+.target {
+	background-color: lemonchiffon;
+	flex-grow: 2;
+}
+.none {
+	background-color: grey;
+	flex-grow: 0;
+}
+
+/*  */
+
+.container1 {
+	background-color: skyblue;
+	height: 36px;
+	padding: 12px;
+	margin-bottom: 16px;
+	display: flex;
+/* 	width: 400px; */
+}
+.item1 {
+	/* 텍스트 가운데 정렬을 위한 스타일*/
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	background: pink;
+}
+.none > .item1 {
+	flex-shrink: 0; /* item이 작아지지 않기 때문에 flex container를 벗어나게 된다.*/
+}
+.active > .item1 {
+	flex-shrink: 1; /* container 크기에 맞게 줄어든다.*/
+}
+.target > .item1:first-child {
+	flex-shrink: 1;
+}
+.target > .item1:nth-child(2) {
+	flex-shrink: 5; /*숫자의 비율에 맞게 줄어든다.*/
+}
+.target > .item1:last-child {
+	flex-shrink: 3; /*숫자의 비율에 맞게 줄어든다.*/
+}
+
+/*  */
+
+.container2 {
+	background-color: skyblue;
+	height: 48px;
+	padding: 12px;
+	margin-bottom: 16px;
+	display: flex;
+	width: 400px;
+}
+.item2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	background: pink;
+	flex-grow: 1;
+}
+.grow2 {
+	flex-grow: 2;
+}
+
+.auto2 > .item2 {
+	flex-basis: auto;
+}
+
+.none2 > .item2 {
+	flex-basis: 0;
+}
+.numb2 > .item2 {
+	flex-basis: 100px;
+}
