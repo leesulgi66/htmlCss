@@ -1,3 +1,7 @@
+h1,p {
+    margin: 0; /*기본으로 적용된 스타일을 없앤다.*/
+}
+
 body{
     background-color: #666;
 }
@@ -11,9 +15,40 @@ body{
 .header{
     background-image: url(images/halloween-header-bg.png);
     color: white;
+    height: 400px;
+    text-align: center;
+}
+
+.header .profile{
+    margin-top: 50px;
+}
+
+.header h1 {
+    color: violet;
+    margin: 10px 0;
+}
+
+.header p {
+    background-color: black;
+    color: #666;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: white;
+    margin: 20px; /*마진 겹침 현상. 위아래 마진이 맞닿을 경우 가장 큰 범위의 마진으로 합쳐진다.*/
+    padding: 20px;
 }
 
 .footer {
     background-color: #111;
     color: white;
+    padding: 10px 0;
+    text-align: center;
+    color: violet;
+    letter-spacing: 5px;
+    text-indent: 5px;
 }
