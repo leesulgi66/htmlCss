@@ -1,3 +1,19 @@
 body{
-    background-color: gray;
+    background-color: #666;
+}
+
+.wrapper {
+    background-color: #ddd;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(images/halloween-header-bg.png);
+    color: white;
+}
+
+.footer {
+    background-color: #111;
+    color: white;
 }
