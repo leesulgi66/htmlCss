@@ -1,0 +1,35 @@
+h1, p {
+    margin: 0;
+}
+
+
+
+body {
+    background-color:#999;
+}
+
+.box {
+    background-color:white;
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.box-robot {
+
+}
+
+.box-contents {
+    padding : 20px;
+}
+
+.box-contents h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box-footer {
+    background-color: #efefef;
+    padding: 20px;
+    text-align: center;
+}
