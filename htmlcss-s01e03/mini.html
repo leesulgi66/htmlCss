@@ -7,14 +7,16 @@
             } 
             .box {
                 background-color: white;
+                text-align: center; /*인라인 특성도 적용이 가능하다.*/
             }
             .box a {
                 background-color: orange;
-                width: 100px; /*인라인 요소에는 블록요소의 명령어가 먹히지 않는다.*/
+                /*width: 100px; /*인라인 요소에는 블록요소의 명령어가 먹히지 않는다.*/
                 height: 100px; /*적용 안됨.*/
                 margin: 10px; /*좌우 margin은 가능하지만 상하단은X*/
                 padding: 10px; /*시각적으로는 상하단 패딩이 적용된것 처럼 보이지만 실제 공간을 차지하진 못한다.(부모의 높이만큼만 적용된다)*/
-
+                display: block; /*인라인 요소를 블록요소로 변경*/
+                display: inline-block; /*인라인의 특성을 가진 블록요소로*/
             }
         </style>
     </head>
