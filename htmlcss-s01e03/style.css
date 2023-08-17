@@ -28,6 +28,10 @@ body {
     text-align: center;
 }
 
+.box-contents p {
+    text-align: left;
+}
+
 .box-footer {
     background-color: #efefef;
     padding: 20px;
