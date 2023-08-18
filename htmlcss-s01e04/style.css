@@ -15,6 +15,8 @@ a {
 
 body {
     background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .wrapper {
@@ -55,7 +57,7 @@ body {
 }
 
 .menu li a:hover {
-    color: orange;
+    color: antiquewhite;
 }
 
 .section {
@@ -70,8 +72,62 @@ body {
   /*그림자 옵션: x,y,농도,크기*/
 }
 
+.section p {
+    line-height: 1.6;
+}
+
+.section p strong {
+    background-color: #883a1d;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: yellowgreen;
+}
+
 .section h1 {
     margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 174px; /* height를 174px 주는 것과 텍스트 정령의 차이가 있다.*/
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section:nth-child(odd) { /*자식 선택자 odd 홀수, even 짝수, 숫자로 특정번째의 자식도 선택 가능*/
+    border-color: brown;
+}
+
+.section:nth-child(even) h1{
+    background-position: left center;
+    text-align: right;
+}
+
+.section h1.animal01 {
+    background-image: url(images/animal01.png);
+    color: orange;
+}
+.section h1.animal02 {
+    background-image: url(images/animal02.png);
+    color: pink;
+}
+.section h1.animal03 {
+    background-image: url(images/animal03.png);
+    color: #ddd;
+}
+.section h1.animal04 {
+    background-image: url(images/animal04.png);
+    color: orangered;
+}
+.section h1.animal05 {
+    background-image: url(images/animal05.png);
+    color: antiquewhite;
+}
+.section h1.animal06 {
+    background-image: url(images/animal06.png);
+    color: orange;
+}
+.section h1.animal07 {
+    background-image: url(images/animal07.png);
+    color: pink;
 }
 
 .footer {
