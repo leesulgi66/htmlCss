@@ -18,7 +18,42 @@ body {
 }
 
 .wrapper {
-    background-color: #999;
+    background-position: center;
+    background-image: url(images/rope.png);
     width: 800px;
     margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    background-image: url(images/logo.png);
+    width: 450px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px 0;
+    text-indent: -9999px; /*text 숨기기*/
+    /* Image Replacement 기법, IR기법 */
+}
+
+.menu {
+    width: 200px;
+    margin: 30px auto;
+    color: #666;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu li a {
+    border: 2px solid ;
+    padding: 6px 0;
+    display: block;
+}
+
+.menu li a:hover {
+    color: orange;
 }
