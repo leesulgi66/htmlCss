@@ -57,3 +57,30 @@ body {
 .menu li a:hover {
     color: orange;
 }
+
+.footer {
+    background-color: #7d410d;
+    color: pink;
+    text-align: center;
+    border-bottom: 10px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    overflow: hidden; /* 부모의 범위 밖으로 나간 자식들을 없애는 역할*/
+}
+
+
+/*
+가상 선택자
+-가상 클래스
+-가상 요소
+*/
+.footer:before { /*가상 요소*/
+    content: " "; /* content를 지우면 안된다! */
+    background-image: url(images/ground.png);
+    background-repeat: repeat x;
+    display: block;
+    height: 50px;
+}
+
+.footer p {
+    padding: 20px 0;
+}
