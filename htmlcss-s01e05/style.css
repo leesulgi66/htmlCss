@@ -7,31 +7,27 @@ body {
 }
 
 .wrapper {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
 }
 
+.wrapper::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
 .section {
-    padding: 30px;
-    margin: 20px 0;
-    text-align: right;
+    width: 260px;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
     overflow: hidden;
+    float:left;
 }
 
-.section:nth-child(even) {
-    text-align: left;
-}
-
-.section:nth-child(even) .section-cover {
-    float: right;
-}
-
-.section:nth-child(even) h1 span {
-    float: right;
-}
-
-.section:nth-child(even) p {
-    margin-left: 0;
+.section:last-child {
+    margin: 0;
 }
 
 .section.blue{
@@ -67,7 +63,6 @@ body {
 
 .section h1 span {
     font-size: 0.5em; /* 부모 px80의 절반 */
-    float: left;
     margin: 0, 0.35em;
     opacity: 0.6;
 }
@@ -86,8 +81,6 @@ body {
 }
 
 .section p {
-    width: 500px;
-    margin-left: auto;
     line-height: 1.5;
 }
 
