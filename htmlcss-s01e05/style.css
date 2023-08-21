@@ -7,22 +7,70 @@ body {
 }
 
 .wrapper {
-    background-color : white;
     width: 800px;
     margin: 0 auto;
 }
 
 .section {
-    clear:left;
-    background-color: dodgerblue;
-    color : yellow;
     padding: 30px;
+    margin: 20px 0;
+    text-align: right;
+}
+
+.section:nth-child(even) {
+    text-align: left;
+}
+
+.section:nth-child(even) .section-cover {
+    float: right;
+}
+
+.section:nth-child(even) h1 span {
+    float: right;
+}
+
+.section.blue{
+    color : yellow;
+    background-color: dodgerblue;
+}
+
+.section.red {
+    color: yellow;
+    background-color: orangered;
+}
+
+.section.yellow {
+    color : orangered;
+    background-color: yellow;
 }
 
 .section::after {
     content: " ";
     display:block;
-    clear: left;
+    clear: both;
+}
+
+.section h1 {
+    font-size: 80px;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.section h1 span {
+    font-size: 0.5em; /* 부모 px80의 절반 */
+    float: left;
+    margin: 0, 0.35em;
+    opacity: 0.6;
+}
+
+.section h1 span::after {
+    content: "kcal";
+    font-size: 0.5em;
+    margin: 0 0.2em;
 }
 
 .section-cover {
