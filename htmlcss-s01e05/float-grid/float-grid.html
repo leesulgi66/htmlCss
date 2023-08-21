@@ -29,6 +29,10 @@
             font-size: 100px;
             color: white;
             text-align: center;
+            float: left; /* float은 위로 뜨기 때문에 부모는 float의 높이를 알지 못한다. */
+        }
+        .wow {
+            background-color: orange;
         }
         </style>
     </head>
@@ -37,6 +41,13 @@
         <div class="wrapper">
             <h1>float grid</h1>
             <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="box">1</div>
+            <div class="wow">
+                wow
+            </div>
         </div>
         
     </body>
