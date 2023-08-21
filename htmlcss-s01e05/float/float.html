@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>05 Float</title>
+        <style>
+            body {
+                background-color: #ddd;
+            }
+            .wrapper {
+                background-color: white;
+                width: 600px;
+                margin: 50px auto;
+            }
+            .wrapper img {
+                /* float의 특징상 뒤따라오는 컨텐츠가 블럭이라도 섞이게 된다.*/
+                float: left; /*right*/
+                margin-right: 20px;
+            }
+            .wrapper p {
+                padding-left: 20px; /* 적용되지 않음! - p tag의 시작점이 보여지는 곳과 다르기 때문 */
+                margin-left: 20px; /* 적용되지 않음! - 따라서 text를 우측으로 밀려면 img에 직접 마진을 주어야 한다.*/
+                border: 10px solid skyblue;
+            }
+
+        </style>
+	</head>
+	<body>
+
+        <div class="wrapper">
+            <img src="img.png">
+            <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget Donec pede justo, fringilla vel, aliquet nec, vulputate egetDonec pede justo, fringilla vel, aliquet nec, vulputate egetDonec pede justo, fringilla vel, aliquet nec, vulputate egetDonec pede justo, fringilla vel, aliquet nec, vulputate egetDonec pede justo, fringilla vel, aliquet nec, vulputate eget
+            </p>
+        </div>
+       
+	</body>
+</html>
