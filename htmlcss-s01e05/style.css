@@ -19,11 +19,13 @@ body {
     padding: 30px;
 }
 
-.section-cover {
-    float: left;
+.section::after {
+    content: " ";
+    display:block;
+    clear: left;
 }
 
-.clear {
-    background-color: red;
-    clear: left;
+.section-cover {
+    float: left;
+    width: 200px;
 }
