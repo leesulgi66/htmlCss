@@ -20,11 +20,37 @@
             .title {
                 font-size: 100px;
                 color: orangered;
+                border: 10px solid blue;
             }
+
+            .title::after,
+            .title::before { /* 가상요소 선택자*/
+                content : " "; /* css에서 content를 추가할 수 있다 */
+                background-image : url(fire.gif);
+                display: inline-block; /* 인라인 요소이기 때문에 width와 height가 적용되지 않는다.*/
+                width: 256px; 
+                height: 246px; 
+            }
+            /* 
+            .title::after {
+                content : "after"; 가상 요소는 컨텐츠 바로 뒤나 앞에 붙는다.
+                background-color: skyblue;
+            } */
 
             .section {
                 background-color: #ddd;
                 margin-bottom: 10px;
+            }
+
+            .section::after {
+                content: "clear";
+                background-color: #666;
+                display: block;
+                clear: both; /* clear를 줌으로써 float이 섞이는 간섭을 막는다. */
+            }
+
+            .section img {
+                float: left; 
             }
         </style>
     </head>
@@ -34,10 +60,17 @@
             <h1 class="title">DIABLO</h1>
 
             <div class="section">
+                <img src="image.png">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet</p>
             </div>
 
             <div class="section">
+                <img src="image.png">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet</p>
+            </div>
+
+            <div class="section">
+                <img src="image.png">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet</p>
             </div>
 
