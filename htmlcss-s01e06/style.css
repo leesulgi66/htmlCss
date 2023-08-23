@@ -1,4 +1,6 @@
-
+body, h1, p{
+    margin: 0;
+}
 
 body {
     background-color: #999;
@@ -12,9 +14,11 @@ body {
 
 .wrapper {
     width: 800px;
-    margin: 50px auto;
-    /* display: flow-root; root는 float의 높이를 알 수 있기때문에 float의 문제를 해결할 수 있다. 하지만 문법상 호환이슈가 있을 수 있다. */
-    overflow: hidden; /* overflow가 기본값 visible이 아닌 속성으로 적요이 된다고 하면, 새로운 BFC를 생성해줌으로써 float의 높이를 체크할 수 있다. */
+    margin: 150px auto;
+    display: flow-root; /*root는 float의 높이를 알 수 있기때문에 float의 문제를 해결할 수 있다.(clear와 같은기능) 하지만 최신 문법상 호환이슈가 있을 수 있다. */
+    /* overflow: hidden; overflow가 기본값 visible이 아닌 속성으로 적용이 된다고 하면, 새로운 BFC를 생성해줌으로써 float의 높이를 체크할 수 있다. (clear와 같은 기능)*/
+    /* 단 overflow의 경우 원래의 목적은 부모크기 보다 큰 부분을 자르기 때문에 마크업상 맞지 않는 다면 쓰지 않는다.*/
+
 }
 
 .sidebar,
@@ -26,12 +30,59 @@ body {
 .sidebar {
     float: right;
     width: 250px;
-    height: 400px;
     margin-left: 20px;
+    text-align: center;
+}
+
+.sidebar-section {
+    margin: 20px 0;
 }
 
 .contents {
     padding: 30px;
     /* display: flow-root; */
     overflow: hidden; /* sidebar와 contents를 구분 하기 위해 사용 */
+}
+
+.cover {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.title {
+    line-height: 1;
+    color:#79a1bc;
+}
+
+.price {
+    color: #79a1bc;
+    font-size: 30px;
+}
+
+.price::before {
+    content: "$";
+    font-size: 0.7em;
+    margin-right: 0.2em;
+    /* vertical-align: middle; */
+    opacity: 0.5;
+}
+
+.button {
+    background-color: #79a1bc;
+    color: white;
+    display: block;
+    margin: 5px 20px;
+    padding: 12px 0 10px 0;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+.button.share {
+    background-color: #aaa;
+}
+
+.footer {
+    font-size: 12px;
+    color: #ddd;
 }
