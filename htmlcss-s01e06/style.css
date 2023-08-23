@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-    background-color: dodgerblue;
+    background-color: white;
     width: 800px;
     margin: 50px auto;
     /* display: flow-root; root는 float의 높이를 알 수 있기때문에 float의 문제를 해결할 수 있다. 하지만 문법상 호환이슈가 있을 수 있다. */
@@ -27,4 +27,7 @@ body {
 
 .contents {
     border: 5px solid red;
+    padding: 30px;
+    /* display: flow-root; */
+    overflow: hidden; /* sidebar와 contents를 구분 하기 위해 사용 */
 }
