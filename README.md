@@ -20,3 +20,7 @@
 ### 5
 
 ![5](https://github.com/leesulgi66/Algorithm/assets/107823688/fef12f7e-7b5e-4289-9e20-95b703b8bab2)
+
+
+### 6 
+![6](https://github.com/leesulgi66/Algorithm/assets/107823688/3d7c234a-ccb3-4b70-8a23-3db3a6751200)
