@@ -1,0 +1,30 @@
+
+
+body {
+    background-color: #999;
+}
+
+.clearfix::after { /* 클리어를 만들어 두고 float 문제가 있을 때 마다 class를 추가해준다. */
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    background-color: dodgerblue;
+    width: 800px;
+    margin: 50px auto;
+    /* display: flow-root; root는 float의 높이를 알 수 있기때문에 float의 문제를 해결할 수 있다. 하지만 문법상 호환이슈가 있을 수 있다. */
+    overflow: hidden; /* overflow가 기본값 visible이 아닌 속성으로 적요이 된다고 하면, 새로운 BFC를 생성해줌으로써 float의 높이를 체크할 수 있다. */
+}
+
+.sidebar {
+    background-color: orange;
+    float: left;
+    width: 250px;
+    height: 400px;
+}
+
+.contents {
+    border: 5px solid red;
+}
