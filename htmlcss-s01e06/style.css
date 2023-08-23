@@ -1,9 +1,9 @@
-body, h1, p{
+body, h1, h2, p{
     margin: 0;
 }
 
 body {
-    background-color: #999;
+    background-color: #ededed;
 }
 
 .clearfix::after { /* 클리어를 만들어 두고 float 문제가 있을 때 마다 class를 추가해준다. */
@@ -86,3 +86,108 @@ body {
     font-size: 12px;
     color: #ddd;
 }
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section h2 {
+    color: #6797b2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.message {
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+
+.message:last-child {
+    margin-bottom: 0;
+}
+
+.message.answer .message-profile {
+    float: right;
+}
+
+.message.answer .message-profile::after {
+    display:none;
+}
+
+.message.answer .message-profile::before {
+    display:inline-block;
+}
+
+.message-profile {
+    float: left;
+}
+
+.message-profile::before,
+.message-profile::after,
+.message-profile img {
+    vertical-align: middle;
+}
+
+.message-profile img {
+    border-radius: 50%;
+}
+
+.message-profile::before,
+.message-profile::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    /* border-left: 10px solid red;
+    border-top: 10px solid blue;
+    border-right: 10px solid #ddd;
+    border-bottom: 10px solid purple; */
+
+    border-width: 10px;
+    border-style: solid;
+}
+
+.message-profile::before {
+    border-color : transparent transparent transparent antiquewhite;
+    display: none;
+}
+
+.message-profile::after {
+    border-color : transparent #ddd transparent transparent;
+}
+
+.message-contents {
+    background-color: #ddd;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.message.answer .message-contents {
+    background-color: antiquewhite;
+}
+
+.star::before,
+.star {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    overflow: hidden;
+}
+
+.star::before {
+    content:" ";
+    display: block;
+    background-position: left bottom;
+    width: 0;
+}
+
+.star.s01::before { width: 20%; }
+.star.s02::before { width: 40%; }
+.star.s03::before { width: 60%; }
+.star.s04::before { width: 80%; }
+.star.s05::before { width: 20%; }
