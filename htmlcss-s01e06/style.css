@@ -11,22 +11,26 @@ body {
 }
 
 .wrapper {
-    background-color: white;
     width: 800px;
     margin: 50px auto;
     /* display: flow-root; root는 float의 높이를 알 수 있기때문에 float의 문제를 해결할 수 있다. 하지만 문법상 호환이슈가 있을 수 있다. */
     overflow: hidden; /* overflow가 기본값 visible이 아닌 속성으로 적요이 된다고 하면, 새로운 BFC를 생성해줌으로써 float의 높이를 체크할 수 있다. */
 }
 
+.sidebar,
+.contents {
+    border-radius: 3px;
+    background-color: white;
+}
+
 .sidebar {
-    background-color: orange;
-    float: left;
+    float: right;
     width: 250px;
     height: 400px;
+    margin-left: 20px;
 }
 
 .contents {
-    border: 5px solid red;
     padding: 30px;
     /* display: flow-root; */
     overflow: hidden; /* sidebar와 contents를 구분 하기 위해 사용 */
