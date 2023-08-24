@@ -55,6 +55,7 @@ body {
     padding: 30px;
     color: #999;
     text-align: right;
+    position: relative;
 }
 
 .section-contents {
@@ -62,7 +63,25 @@ body {
 }
 
 .section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    border-bottom: 6px solid ;
+    display: inline-block;
+}
+
+.section.strawberry h2 {
+    color: orangered;
+    border-color: forestgreen;
+}
+
+.section.orange h2 {
+    color: orange;
+    border-color: antiquewhite;
+}
+
+.section.kiwi h2 {
+    color: forestgreen; 
+    border-color: #c78c7c;
 }
 
 .section p {
@@ -74,4 +93,21 @@ body {
 
 .section p:last-child {
     margin-right: 0;
+}
+
+.section-cover {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: 0 -160px;
+    transform : translate(0, -50%);
+}
+
+.section:nth-child(even) {
+    text-align: left;
+}
+
+.section:nth-child(even) .section-cover{
+    left: auto;
+    right: 0;
 }
