@@ -24,3 +24,6 @@
 
 ### 6 : Float 속성으로 가로배치 2
 ![6](https://github.com/leesulgi66/Algorithm/assets/107823688/3d7c234a-ccb3-4b70-8a23-3db3a6751200)
+
+### 7 : Position 속성
+![1](https://github.com/leesulgi66/Algorithm/assets/107823688/21d8d601-43e0-4222-8d47-637076570c3f)
