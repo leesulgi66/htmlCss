@@ -1,0 +1,33 @@
+/* CSS Reset */
+body, h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+/* html,body{
+    height: 100%; 예전 방식(부모의 height도 100% 잡아준다.)
+} */
+
+.cover {
+    color: white;
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/background.png);
+    height: 100vh; /* viewport height */
+    font-size: 10vw;
+}
+
+.cover h1 {
+    background-color: orangered;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.1em 0.4em 0.2em ;
+    border-radius: 5px;
+    line-height: 1;
+}
