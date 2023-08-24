@@ -20,9 +20,21 @@
                 height: 200px;
                 margin: 50px auto;
             }
-            .children {
+            .children{
                 width: 100px;
                 height: 100px;
+                /* margin-left:-50px; 이미지를 옮기기 위해 margin을 주게 되면, 뒤에있는 contents에게도 영향이 간다.
+                margin-top: -50px; */
+            }
+            .children.rel {
+                position: relative; /* 상대적인 */
+                left: -50px; /* 주위 환경에 영향을 미치지 않고 껍데기만 이동. (공간 자체는 원래 위치에 차지하고 있다.)*/
+                top: -50px; /* 상대적 위치는 컨텐츠가 추가등으로 공간이 변하면 위치가 이동된다. */
+            }
+            .children.abs {
+                position: absolute; /* 공간을 버리고 위로 떠버린다.(contents가 겹쳐져 버린다.)*/
+                left: 100px; /* 전체 창의 왼쪽 위로 이동 */
+                
             }
         </style>
 	</head>
@@ -30,7 +42,13 @@
 
         <div class="grand-father">
             <div class="father">
-                <img class="children" src="img.png">
+                <img class="children rel" src="img.png">ypgab
+            </div>
+        </div>
+
+        <div class="grand-father">
+            <div class="father">
+                <img class="children abs" src="img.png">ypgab
             </div>
         </div>
        
