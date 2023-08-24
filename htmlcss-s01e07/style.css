@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, h1 {
+body, h1, h2, p{
     margin: 0;
 }
 
@@ -7,9 +7,20 @@ h1 {
     font-size: 100%;
 }
 
+/* Common */
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
 /* html,body{
     height: 100%; 예전 방식(부모의 height도 100% 잡아준다.)
 } */
+
+body {
+    background-color: #ddd;
+}
 
 .cover {
     color: white;
@@ -17,8 +28,9 @@ h1 {
     background-size: cover;
     background-position: center;
     background-image: url(images/background.png);
-    height: 100vh; /* viewport height */
+    height: 50vh; /* viewport height */
     font-size: 10vw;
+    position:relative;
 }
 
 .cover h1 {
@@ -30,4 +42,36 @@ h1 {
     padding: 0.1em 0.4em 0.2em ;
     border-radius: 5px;
     line-height: 1;
+}
+
+.wrapper {
+    width: 980px;
+    margin: 50px auto;
+}
+
+.section {
+    background-color: white;
+    margin: 50px 0 ;
+    padding: 30px;
+    color: #999;
+    text-align: right;
+}
+
+.section-contents {
+    display: inline-block;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.section p {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+    line-height: 1.6; 
+}
+
+.section p:last-child {
+    margin-right: 0;
 }
