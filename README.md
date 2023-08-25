@@ -27,3 +27,6 @@
 
 ### 7 : Position 속성
 ![1](https://github.com/leesulgi66/Algorithm/assets/107823688/21d8d601-43e0-4222-8d47-637076570c3f)
+
+### 8 : Position 속성 Part2
+
