@@ -33,17 +33,38 @@ body {
 }
 
 .header {
-    background-color: rgba(255,255,255, 0.2);
+
 }
 
 .logo {
-    background-color: orange;
+    text-indent: -9999px;
+    overflow: hidden;
     float: left;
+    background-image: url(images/logo.png);
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px; /* a tag는 inline요소라 height가 적용 되지 않지만 float이 들어간 inline요소는 block처럼 처리 된다. */
 }
 
 .menu {
-    background-color: orangered;
     float: left;
+}
+
+.menu li {
+    float: left;
+
+}
+
+.menu li a {
+    display: block;
+    height: 80px;
+    line-height: 80px; /* line-heght가 들어가면서 위쪽과 아래쪽에 균등한 공간을 준다.(text가 가운데 정렬이 된다.)* */
+    padding: 0 20px;
+}
+
+.menu li a:hover {
+    color: #fff;
 }
 
 /* .contents {
