@@ -1,5 +1,5 @@
 /* Reset CSS */
-body, ul {
+body, ul, h1, h2, p{
     margin: 0;
     padding: 0;
 }
@@ -26,10 +26,20 @@ a {
     clear: both;
 }
 
+.button {
+    background-color: purple;
+    color: white;
+    padding: 0.5em 1.2em 0.5em;
+    display: inline-block;
+    color: violet;
+    border-radius: 3px;
+}
+
 /* Components CSS */
 body {
     background-color: #111;
     color: #999;
+    font-size: 14px;
 }
 
 .header {
@@ -86,10 +96,66 @@ body {
     margin: 0;
 }
 
-/* .contents {
-    background-color: rgba(255,255,255, 0.4);
+.contents {
 }
 
-.footer {
+.cover {
+    background-image: url(images/cover.png);
+    height: 300px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.cover-car {
+    position: absolute;
+    right: 0;
+    top: -60px;
+}
+
+.cover-contents {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.cover-contents h1 {
+    line-height: 1.1;
+}
+
+.cover-contents h1 strong{
+    display: block;
+    color: orangered;
+}
+
+.cover-contents p {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
+}
+
+.price::before {
+    content: "$";
+}
+
+.price::after {
+    content: "/mo";
+    font-size: 0.5em;
+    color: #999;
+}
+
+.description {
+    width: 300px;
+}
+
+/* .footer {
     background-color: rgba(255,255,255, 0.8);
 } */
