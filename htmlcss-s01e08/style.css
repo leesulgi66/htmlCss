@@ -61,10 +61,29 @@ body {
     height: 80px;
     line-height: 80px; /* line-heght가 들어가면서 위쪽과 아래쪽에 균등한 공간을 준다.(text가 가운데 정렬이 된다.)* */
     padding: 0 20px;
+    position: relative;
+}
+
+.menu li a:before {
+    content: " ";
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0 100px; /* margin 을 줘서 선을 없앤다. */
+    transition: margin 0.5s;
 }
 
 .menu li a:hover {
     color: #fff;
+}
+
+.menu li a:hover:before {
+    margin: 0;
 }
 
 /* .contents {
