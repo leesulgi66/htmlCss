@@ -42,10 +42,6 @@ body {
     font-size: 14px;
 }
 
-.header {
-
-}
-
 .logo {
     text-indent: -9999px;
     overflow: hidden;
@@ -96,8 +92,6 @@ body {
     margin: 0;
 }
 
-.contents {
-}
 
 .cover {
     background-image: url(images/cover.png);
