@@ -30,9 +30,10 @@ body{
     position: absolute;
     left: 50%;
     top: 0;
-    bottom: -100px;
-    width: 4px;
-    transform: trnaslateX(-50%);
+    bottom: 0;
+    margin: 100px 0 -100px;
+    width: 6px;
+    transform: translateX(-50%);
 }
 
 .timeline-item {
@@ -45,22 +46,36 @@ body{
 .timeline-item:before {
     content: " ";
     background-color: #0e0e0e;
+    background-image: url(images/bg.png);
     position: absolute;
     right: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 6px solid dodgerblue;
-    margin: 0 -22px;
+    margin: 50px -20px;
+}
+
+.timeline-item:after {
+    content: " ";
+    background-color: dodgerblue;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 5px;
+    top: 65px;
+    margin: 0 30px;
+
 }
 
 .timeline-item:nth-child(even) {
     margin-left: auto;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    margin-top: -120px;
+    margin-bottom: -120px;
 }
 
-.timeline-item:nth-child(even):before {
+.timeline-item:nth-child(even):before,
+.timeline-item:nth-child(even):after {
     left: 0;
 }
 
