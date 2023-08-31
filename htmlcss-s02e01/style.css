@@ -17,3 +17,21 @@ body{
     width: 1200px;
     margin: 0 auto;
 }
+
+.timeline {
+    background-color: yellow;
+}
+
+.timeline-item {
+    background-color: orange;
+    width: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+}
+
+.tour {
+    background-color: dodgerblue;
+    min-height: 200px;
+}
