@@ -17,6 +17,29 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+.cover {
+    color: white;
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/cover.png);
+    height: 25vh; 
+    font-size: 5vw;
+    position:relative;
+}
+
+.cover h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.1em 0.1em 0.2em ;
+    border-radius: 5px;
+    line-height: 1;
 }
 
 .timeline {
