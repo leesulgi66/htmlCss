@@ -1,4 +1,4 @@
-body, ul, h1 {
+body, ul, h1, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -71,7 +71,7 @@ body{
 .timeline-item:nth-child(even) {
     margin-left: auto;
     margin-top: -120px;
-    margin-bottom: -120px;
+    margin-bottom: -220px;
 }
 
 .timeline-item:nth-child(even):before,
@@ -82,4 +82,27 @@ body{
 .tour {
     background-color: #000;
     min-height: 400px;
+}
+
+.tour-cover {
+    width: 100%;
+}
+
+.tour-contents {
+    padding: 30px;
+}
+
+.tour-contents h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.tour-contents h2 strong {
+    display: block;
+    color: #999;
+}
+
+.tour-contents p {
+    line-height: 1.4;
+    color: #999;
 }
