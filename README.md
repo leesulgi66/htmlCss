@@ -31,4 +31,6 @@
 ### 8 : Position 속성 Part2
 ![1](https://github.com/leesulgi66/Algorithm/assets/107823688/dc3c2e5d-030f-42b7-8825-2974564bd385)
 
+### 9 : auto 와 %, Negative Margins
+![녹화_2023_09_01_17_47_45_567](https://github.com/leesulgi66/Algorithm/assets/107823688/255ddb9a-56ba-4d48-b709-ebd608ee37f1)
 
