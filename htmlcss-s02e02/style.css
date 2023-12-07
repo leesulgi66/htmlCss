@@ -1,25 +1,28 @@
+/* css reset */
 body { 
     margin: 0;
 }
 
-body {
-    background-image: url(images/bg.png);
-    color: #999;
-}
-
-.wrapper {
+/* layouts */
+.l_wrapper {
     width: 960px;
     margin: 0 auto;
 }
 
-.sidebar {
+.l_sidebar {
     background-color : orange;
     float: right;
     margin-left: 20px;
     width: 300px;
 }
 
-.main {
+.l_main {
     border: 5px solid red;
     overflow : hidden;
+}
+
+/* components */
+body {
+    background-image: url(images/bg.png);
+    color: #999;
 }
