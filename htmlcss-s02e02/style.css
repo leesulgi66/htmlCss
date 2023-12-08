@@ -1,6 +1,10 @@
 /* css reset */
-body { 
+body, p { 
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color : inherit;
 }
 
 /* layouts */
@@ -10,7 +14,6 @@ body {
 }
 
 .l_sidebar {
-    background-color : orange;
     float: right;
     margin-left: 20px;
     width: 300px;
@@ -18,11 +21,92 @@ body {
 
 .l_main {
     border: 5px solid red;
-    overflow : hidden;
+    overflow : hidden; /* 사이드바와 분리하기 위한 오버플로우 */
+    /* 오버플로우는 넘치는 뷰를 잘라버리기 때문에 정확한 방법은 아니다. display : flow-root; 호환 이슈가 없다면 사용 가능하다. */
 }
+
+/* commons */
+.clearfix::after {
+    /* 상하단 마진겹침 현상은 block + block 에서 일어나기 때문에 사이에 블록이 아닌것을 추가해 겹칩을 해결한다. */
+    content: ' ';
+    display: table;
+}
+
+/* button */
+.button {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.button_block {
+    display: block;
+    text-align: center;
+}
+
+.button_important {
+    background-color: orangered;
+}
+
+/* util */
+.mb_5 {margin-bottom: 5px;}
 
 /* components */
 body {
     background-image: url(images/bg.png);
     color: #999;
+}
+
+.contents {
+    padding : 40px 0;
+}
+
+.checkout {
+    background-color : #222;
+}
+
+.checkout-section {
+    margin : 20px;
+}
+
+.video{
+    background-color: dodgerblue;
+    padding-top: 56.25%; /* %가 들어가면 video 기준 width 기준으로 높이가 잡힌다. 100% = '정사각형이 됨'*/
+    /*%비율로 주게 될 경우 나중에 사이드바 크기가 변해도 같은 비율로 비디오크기가 변경 된다!*/
+    position: relative;
+}
+
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+}
+
+.price {
+    font-size : 40px;
+    font-weight: bold;
+    color : dodgerblue;
+
+}
+
+.price-discount {
+    font-weight: normal;
+    color: #999;
+    font-size : 0.5em;
+    position: relative;
+    text-decoration: line-through;
+}
+
+.price-discount::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    bottom: 0.5em;
+    opacity: 0.5;
+    background-color: white;;
 }
