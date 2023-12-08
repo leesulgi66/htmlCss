@@ -1,10 +1,22 @@
 /* css reset */
-body, p { 
+body, p, h1, h2, h3, ul { 
     margin: 0;
+    padding: 0;
 }
+
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color : inherit;
+}
+
+/* Typograph */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
 }
 
 /* layouts */
@@ -20,9 +32,12 @@ a {
 }
 
 .l_main {
-    border: 5px solid red;
     overflow : hidden; /* 사이드바와 분리하기 위한 오버플로우 */
     /* 오버플로우는 넘치는 뷰를 잘라버리기 때문에 정확한 방법은 아니다. display : flow-root; 호환 이슈가 없다면 사용 가능하다. */
+    font-family: 'Jua', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+
 }
 
 /* commons */
@@ -31,6 +46,28 @@ a {
     content: ' ';
     display: table;
 }
+
+.star,
+.star::before {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    overflow: hidden;
+}
+
+.star::before {
+    content:" ";
+    width: 0;
+    display: blcok;
+    background-position: left bottom;
+}
+
+.star_1::before {width: 20%;}
+.star_2::before {width: 40%;}
+.star_3::before {width: 60%;}
+.star_4::before {width: 80%;}
+.star_5::before {width: 100%;}
 
 /* button */
 .button {
@@ -109,4 +146,96 @@ body {
     bottom: 0.5em;
     opacity: 0.5;
     background-color: white;;
+}
+
+.course-cover {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/cover.png);
+    padding: 30px;
+    position: relative;
+}
+
+.course-cover::after {
+    content: " ";
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* https://www.colorzilla.com/gradient-editor/ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+
+}
+
+.course-creator, 
+.course-title {
+    position: relative;
+    z-index: 10;
+}
+
+.course-creator {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    text-align: right
+}
+
+.course-creator-logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.course-creator-contents {
+    padding: 5px;
+}
+
+.course-creator-contents strong {
+    display: block;
+}
+
+.course-title {
+    display: flow-root;  /* float된 course-creator와 분리 */
+}
+
+.course-title h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.course-title p {
+    margin-bottom: 20px;
+}
+
+.course-section h2 {
+    font-size: 30px;
+    color: #999;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+}
+
+.course-section-contents {
+
+}
+
+.curriculum {
+    background-color: #333;
+}
+
+.curriculum-item {
+    background-color: #666;
+    margin-bottom: 10px;
+}
+
+.curriculum-item:last-child {
+    margin-bottom: 0;
+}
+
+.course-section {
+    margin: 20px 0;
 }
