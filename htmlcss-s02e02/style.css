@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* commons */
+.clearfix::before,
 .clearfix::after {
     /* 상하단 마진겹침 현상은 block + block 에서 일어나기 때문에 사이에 블록이 아닌것을 추가해 겹칩을 해결한다. */
     content: ' ';
@@ -224,16 +225,52 @@ body {
 }
 
 .curriculum {
-    background-color: #333;
 }
 
 .curriculum-item {
-    background-color: #666;
+    background-color: #333;
     margin-bottom: 10px;
 }
 
 .curriculum-item:last-child {
     margin-bottom: 0;
+}
+
+.curriculum-item h3 {
+    margin: 10px 20px;
+}
+
+.curriculum-item-list{
+    background-color: #111;
+    padding: 20px 0;
+    margin: 5px;
+}
+
+.curriculum-link {
+    background-color: rgba(255,255,255,0.03);
+    display: block;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.curriculum-link::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent currentColor;
+    display: inline-block;
+}
+
+.curriculum-link:hover {
+    color: white;
+}
+
+.curriculum-link span {
+    /* span에도 class를 주는 것이 좋다 */
+    float: right;
+    font-size: 10px;
 }
 
 .course-section {
