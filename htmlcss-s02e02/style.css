@@ -19,10 +19,17 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
 }
 
+body {
+    font-family: 'Jua', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+
 /* layouts */
 .l_wrapper {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .l_sidebar {
@@ -34,10 +41,6 @@ h1,h2,h3,h4,h5,h6 {
 .l_main {
     overflow : hidden; /* 사이드바와 분리하기 위한 오버플로우 */
     /* 오버플로우는 넘치는 뷰를 잘라버리기 때문에 정확한 방법은 아니다. display : flow-root; 호환 이슈가 없다면 사용 가능하다. */
-    font-family: 'Jua', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Rajdhani', sans-serif;
-
 }
 
 /* commons */
@@ -48,9 +51,12 @@ h1,h2,h3,h4,h5,h6 {
     display: table;
 }
 
+.star {
+    display: inline-block;
+}
+
 .star,
 .star::before {
-    display: inline-block;
     width: 150px;
     height: 30px;
     background-image: url(images/star-sprite.png);
@@ -60,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 .star::before {
     content:" ";
     width: 0;
-    display: blcok;
+    display: block;
     background-position: left bottom;
 }
 
@@ -254,6 +260,7 @@ body {
 }
 
 .curriculum-link::before {
+    /* 화살표 만드는 팁 */
     content: " ";
     width: 0;
     height: 0;
@@ -275,4 +282,28 @@ body {
 
 .course-section {
     margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .l_sidebar {
+        width: auto;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-cover {
+        text-align: center;
+    }
+    .course-creator {
+        float: none;
+        margin: 0;
+        width: auto;
+        text-align: center;
+    }
+    .curriculum-link span {
+        display: none;
+    }
 }
