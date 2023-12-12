@@ -1,6 +1,11 @@
 /* CSS Reset */
-body, p  {
-	margin: 0;
+body, p, h1, h2, h3, ul { 
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 a {
@@ -9,14 +14,25 @@ a {
 }
 
 /* Typograph */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
 
 /* Util */
 .mb_5 { margin-bottom: 5px; }
 
 /* Layouts */
 .l_wrapper {
-	width: 960px;
-	margin: 0 auto;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .l_sidebar {
@@ -29,11 +45,31 @@ a {
 	overflow: hidden;
 }
 
+.l_row {
+	margin: 0 -10px;
+}
+
+.l_col {
+	float: left;
+	/* %는 부모의 %값을 픽셀로 받아옴 */
+	width: 20%;
+	/* 배정된 %에 추가로 패딩이 늘어서 레이아웃이 깨짐 */
+	padding: 0 10px;
+	/* 패딩을 확보하면서 박스크기에 맞게(20%) 조정 */
+	box-sizing: border-box;
+}
+
 
 /* Commons */
 .clearfix:after {
+	/* 부모와 자식간의 마진겹침현상을 해결 */
 	content: ' ';
 	display: table;
+}
+
+.clearfix:after {
+	/* 부모가 float의 높이를 인지하지 못하는 문제 해결 */
+	clear: both;
 }
 
 .star {
@@ -147,16 +183,43 @@ body {
 	margin: 20px 0;
 }
 
+/* Item */
+.item {
+	background-color: dodgerblue;
+}
+
+.item-cover{
+	width: 100%;
+	/* img의 inline-block 속성으로 인해 하단공간이 생김 -> block처리 */
+	display: block;
+}
+
 .footer {
     background-color: rgba(0,0,0,0.3);
 }
 
 
 /* Mediaqueries */
-@media ( max-width: 960px  ) {
+@media (max-width: 768px) {
+    .l_sidebar {
+        width: auto;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
 
-} 
-
-@media ( max-width: 480px  ) {
-
-} 
+@media (max-width: 480px) {
+    .course-cover {
+        text-align: center;
+    }
+    .course-creator {
+        float: none;
+        margin: 0;
+        width: auto;
+        text-align: center;
+    }
+    .curriculum-link span {
+        display: none;
+    }
+}
