@@ -43,7 +43,23 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 }
 
+.l_row {
+	background-color: orange;
+	/* auto 상태에서 negative margin은 늘어난다. */
+	margin: 0 -10px;
+}
 
+.l_col {
+	background-color: orangered;
+	float: left;
+	/* %는 부모의 %값을 픽셀로 받아옴 */
+	width: 33.333333333333%;
+	/* 배정된 %에 추가로 패딩이 늘어서 레이아웃이 깨짐 */
+	padding: 0 10px;
+	/* 패딩을 확보하면서 박스크기에 맞게(20%) 조정 */
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
 
 /* Commons */
 /* 부모와 자식간 마진겹침현상을 해결하기 위한 팁 */
@@ -51,6 +67,11 @@ h1, h2, h3, h4, h5, h6 {
 .clearfix:after {
 	content: ' ';
 	display: table;
+}
+
+/* float으로 인해 부모가 자식의 높이를 측정하지 못하는 부분 해결 */
+.clearfix:after {
+	clear: both;
 }
 
 .star {
@@ -286,6 +307,9 @@ body {
 	font-size: 10px;
 }
 
+.item {
+	background-color: dodgerblue;
+}
 
 
 .footer {
