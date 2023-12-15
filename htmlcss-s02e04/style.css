@@ -13,6 +13,13 @@ a {
 	color: inherit;
 }
 
+img {
+	/* img가 자기가 가진 크기까지만 맞춰짐(커짐) */
+	max-width: 100%;
+	/* img의 inline-block 속성으로 인해 하단공간이 생김 */
+	vertical-align: top;
+}
+
 /* Typograph */
 html {
 	font-family: sans-serif;
