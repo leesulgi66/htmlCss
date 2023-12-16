@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .l_row {
 	/* auto 상태에서 negative margin은 늘어난다. */
-	margin: 0 -10px;
+	margin: 0 -10px -10px -10px;
 }
 
 .l_col {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 10px;
 	/* 패딩을 확보하면서 박스크기에 맞게(20%) 조정 */
 	box-sizing: border-box;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 /* %는 부모의 %값을 픽셀로 받아옴 */
@@ -325,9 +325,31 @@ body {
 }
 
 .item {
-	background-color: dodgerblue;
+	background-color: #333;
 }
 
+.item-cover {
+	width: 100%;
+}
+
+.item-contents {
+	padding: 20px;
+}
+
+.item-contents h2 {
+	font-size: 30px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.item-footer {
+	background-color: rgba(0,0,0,0.15);
+	padding: 20px;
+}
+
+.item-footer .l_col {
+	margin-bottom: 0;
+}
 
 .footer {
     background-color: rgba(0,0,0,0.3);
@@ -336,6 +358,12 @@ body {
 
 /* Mediaqueries */
 @media ( min-width: 1400px ) {
+	.l_wrapper {
+		max-width: 1400px;
+	}
+	.l_col {
+		padding: 0 5px;
+	}
 	.l_col_ld_12_12 {width: 100%;}
 	.l_col_ld_11_12 {width: 91.6666666667%;}
 	.l_col_ld_10_12 {width: 83.3333333333%;}
