@@ -38,4 +38,7 @@
 ### s02e02 : 반응형 사이드바 레이아웃
 ![10](https://github.com/leesulgi66/Algorithm/assets/107823688/3e8c4599-0086-4cd0-9bee-23e5aeefc534)
 
+### s02e04 : 반응형 그리드
+![[s02e04](https://github.com/leesulgi66/htmlCss/tree/main/htmlcss-s02e04)](https://github.com/leesulgi66/Algorithm/assets/107823688/48a2d62a-ddcf-4ba3-8c7c-b89968c02c1b)
+
 
