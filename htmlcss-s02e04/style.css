@@ -369,6 +369,17 @@ body {
 	font-size: 30px;
 	color: white;
 	margin-bottom: 10px;
+	/* text가 길어도 줄바꿈 되지 않는다. */
+	white-space: nowrap;
+	overflow: hidden;
+	/* 잘려간 text 부분에 ... 표시 */
+	text-overflow: ellipsis;
+}
+
+.item-contents p {
+	line-height: 1.2;
+	height: 6em;
+	overflow: hidden;
 }
 
 .item-footer {
