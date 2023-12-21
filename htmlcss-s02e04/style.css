@@ -470,6 +470,11 @@ body {
 	.curriculum-link span {
 		display: none;
 	}
+	
+	.item-contents p {
+		/* 모바일에서는 원래의 높이로 돌아간다. */
+		height: auto;
+	}
 } 
 
 
